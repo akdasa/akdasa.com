@@ -1,0 +1,10 @@
+{{ define "main" }}
+<ul>
+  {{ range (where .Pages "Section" "!=" "") }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <div>{{ .Params.description }}</div>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

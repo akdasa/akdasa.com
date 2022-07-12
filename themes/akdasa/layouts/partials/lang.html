@@ -1,0 +1,5 @@
+<ul class="lang">
+{{ range $.Site.Home.AllTranslations }}
+<li><a href="{{ .Permalink }}">{{ .Language.Params.flag }}</a></li>
+{{ end }}
+</ul>

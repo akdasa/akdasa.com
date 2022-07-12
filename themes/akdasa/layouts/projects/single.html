@@ -1,0 +1,36 @@
+{{ define "meta" }}
+<h1>
+    <div class="title">{{ .Title }}</div>
+    {{ if .Params.website }}
+    <a href="{{ .Params.website }}">go</a>
+    {{ end }}
+
+    {{ if .Params.sources }}
+    <a href="{{ .Params.sources }}">Sources</a>
+    {{ end }}
+</h1>
+{{ end }}
+
+{{ define "main" }}
+{{ $relatedTags := .Params.related.tags }}
+{{ $relatedArticles := where $.Site.Pages ".Params.tags" "intersect" $relatedTags }}
+
+<!-- <div class="article-meta" style="background:url(cover.jpg) no-repeat center center; background-size: cover;"> -->
+<div class="article-meta">
+    {{ block "meta" . }}{{ end }}
+</div>
+
+<main>
+    {{ .Content }}
+</main>
+
+{{ if len $relatedArticles }}
+    <h1>Related articles:</h1>
+    {{ range $relatedArticles }}
+    <li>
+        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+    {{ end }}
+{{ end }}

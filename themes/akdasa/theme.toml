@@ -1,0 +1,12 @@
+name = "akdasa"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = ["minimal", "blog", "personal", "clean", "simple", "starter", "minimalist"]
+features = ["blog"]
+min_version = "0.18"
+
+[author]
+  name = "akdasa"
+  homepage = "https://akdasa.com"
