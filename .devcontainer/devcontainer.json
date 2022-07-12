@@ -1,0 +1,8 @@
+{
+    "name": "akdasa.com",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceFolder": "/akdasa.com",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/akdasa.com,type=bind,consistency=cached"
+}

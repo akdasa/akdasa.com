@@ -1,0 +1,70 @@
+baseurl: ""
+relativeURLs: true
+languageCode: "en-us"
+theme: "akdasa"
+paginate: 5
+title: Advaita Krishna das
+
+languages:
+  en:
+    languageName: English
+    title: Advaita Krishna das
+    subtitle: Wake up, pray, code
+    keywords: ''
+    menuMore: Show more
+    readMore: Read more
+    readOtherPosts: Read other posts
+    flag: 🇺🇸
+
+    params:
+      logo:
+        logoText: Advaita Krishna das
+        logoHomeLink: /
+    menu:
+      main:
+      - identifier: articles
+        name: Articles
+        url: /articles
+      - identifier: projects
+        name: Projects
+        url: /projects
+
+  ru:
+    languageName: Russian
+    title: Advaita Krishna das
+    subtitle: Wake up, pray, code
+    keywords: ''
+    menuMore: Ещё
+    readMore: Читать далее
+    readOtherPosts: Читать также
+    flag: 🇷🇺
+
+    params:
+      logo:
+        logoText: Advaita Krishna das
+        logoHomeLink: /ru
+    menu:
+      main:
+      - identifier: articles
+        name: Блог
+        url: /ru/articles
+      - identifier: projects
+        name: Проекты
+        url: /ru/projects
+
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: monokai
+    tabWidth: 2
