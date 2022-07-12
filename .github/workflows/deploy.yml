@@ -23,4 +23,4 @@ jobs:
         username: ${{ secrets.FTP_LOGIN }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./public/
-        server-dir: www/akdasa.com/
+        server-dir: /
